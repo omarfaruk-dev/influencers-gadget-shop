@@ -103,6 +103,13 @@ ul li a:hover {
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: cover;
+    height: 475px;
+    width: 475px;
+}
+
+.hero-img img {
+    height: 100%;
+    width: 100%;
 }
 
 /* brands section styles */
@@ -194,6 +201,59 @@ ul li a:hover {
     padding: 5px 0 30px;
 }
 
+.card-btn {
+    text-align: right;
+    margin-top: 3rem;
+}
+
+.card-btn a {
+    text-decoration: none;
+    color: rgba(224, 44, 109, 0.87);
+    font-weight: 700;
+}
+
+.card-btn span {
+    margin-left: 10px;
+}
+
+/* featured section styles */
+.featured {
+    max-width: 1100px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 96px;
+}
+
+.featured-img .featured-title {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #0A0826;
+}
+
+.featured-description {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 28px;
+    color: #6C6C6C;
+    margin: 16px 0;
+}
+.featured-content a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 24px;
+    background: #E02C6D;
+    font-weight: 700;
+
+}
+.featured-content a:hover{
+    background: #bb1652;
+    transition: ease-in-out 1s;
+}
+.featured-content a img{
+    padding-left: 10px;
+}
 
 
 
@@ -227,13 +287,27 @@ ul li a:hover {
         width: 80%;
         height: auto;
     }
-    .collection-card{
+
+    .collection-card {
         margin: 0 0 50px;
     }
-    .card-container{
+
+    .card-container {
         grid-template-columns: repeat(2, 329px);
         gap: 15px;
     }
+    .featured{
+        flex-direction: column-reverse;
+        text-align: center;
+        margin: 0 20px;
+        gap: 40px;
+    }
+    .featured-img img{
+        width: 90vw;
+    }
+    
+    
+    
 }
 
 
@@ -252,18 +326,30 @@ ul li a:hover {
         justify-content: space-between;
     }
 
-    .hero {
+    .hero, 
+    .featured {
         flex-direction: column-reverse;
     }
 
-    .hero-img svg {
-        width: 80%;
+    .hero-img {
+        background-position: center;
+        height: unset;
+        width: unset;
+        margin: 20px;
     }
 
     .brands-logo {
         grid-template-columns: repeat(4, 1fr);
     }
-    .card-container{
+
+    .card-container {
         grid-template-columns: 329px;
+    }
+    .featured{
+        text-align: center;
+        margin: 0 20px;
+    }
+    .featured-img img{
+        width: 90vw;
     }
 }
