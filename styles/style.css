@@ -69,6 +69,11 @@ ul li a:hover {
     font-size: 1.5rem;
     font-weight: 700;
 }
+.nav-title:hover{
+    color: #E02C6D;
+    transition: ease-in-out 0.7s;
+    cursor: pointer;
+}
 
 .hide-desktop {
     display: none;
@@ -96,6 +101,9 @@ ul li a:hover {
     font-weight: 600;
     line-height: 24px;
     margin: 16px 0;
+}
+.hero-content button img{
+    padding-left: 10px;
 }
 
 .hero-img {
@@ -239,7 +247,8 @@ ul li a:hover {
     color: #6C6C6C;
     margin: 16px 0;
 }
-.featured-content a{
+
+.featured-content a {
     text-decoration: none;
     color: #fff;
     padding: 10px 24px;
@@ -247,15 +256,41 @@ ul li a:hover {
     font-weight: 700;
 
 }
-.featured-content a:hover{
+
+.featured-content a:hover {
     background: #bb1652;
     transition: ease-in-out 1s;
 }
-.featured-content a img{
+
+.featured-content a img {
     padding-left: 10px;
 }
 
+/* footer styles */
+footer {
+    background: #0A0826;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+}
 
+.footer-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+footer span {
+    color: #D9DBE1;
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 15px 0;
+
+}
 
 /* media query */
 /* media query for tablets */
@@ -296,18 +331,20 @@ ul li a:hover {
         grid-template-columns: repeat(2, 329px);
         gap: 15px;
     }
-    .featured{
+
+    .featured {
         flex-direction: column-reverse;
         text-align: center;
         margin: 0 20px;
         gap: 40px;
     }
-    .featured-img img{
+
+    .featured-img img {
         width: 90vw;
     }
-    
-    
-    
+
+
+
 }
 
 
@@ -326,7 +363,7 @@ ul li a:hover {
         justify-content: space-between;
     }
 
-    .hero, 
+    .hero,
     .featured {
         flex-direction: column-reverse;
     }
@@ -345,11 +382,13 @@ ul li a:hover {
     .card-container {
         grid-template-columns: 329px;
     }
-    .featured{
+
+    .featured {
         text-align: center;
         margin: 0 20px;
     }
-    .featured-img img{
+
+    .featured-img img {
         width: 90vw;
     }
 }
